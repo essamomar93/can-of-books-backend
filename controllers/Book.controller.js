@@ -1,12 +1,12 @@
 "use strict";
 
-const{ BookModel}=require('../models/Book.model');
+const bookModel=require('../models/Book.model');
 
 let booksController= (req,res)=>{
-    BookModel.find().then(data=>{
+    bookModel.find().then(data=>{
         res.json(data);
     })  
 }
-module.exports={booksController
-    }
+module.exports= booksController
+    
 
