@@ -14,17 +14,9 @@ const booksController=require("./controllers/Book.controller")
 const {
    bookModel}=require("./models/Book.model");
 
-// app.get('/books', (req, res) => {
-//   // seedBook();
-//   // res.json({'message':'test request received'})
 
-// })
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
 
 app.get('/books',booksController)
 
-// app.get('/books',(req,res)=>{
-//   bookModel.find().then(data=>{
-//       res.json(data);
-// })})
 mongoose.connect(`${MONGO_SERVER}/Book`,{useNewUrlParser: true, useUnifiedTopology: true});
