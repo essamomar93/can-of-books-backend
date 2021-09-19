@@ -3,16 +3,23 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-
 const app = express();
 app.use(cors());
+const mongoose=require("mongoose");
+const MONGO_SERVER=process.env.MONGO_SERVER;
+const PORT = process.env.PORT || 8000;
+const seedBook=require("./models/Book.model");
+const{ booksController}=require("./controllers/Book.controller")
 
-const PORT = process.env.PORT || 3001;
+// app.get('/books', (req, res) => {
+//   // seedBook();
+//   booksController();
+//   // res.json({'message':'test request received'})
 
-app.get('/test', (request, response) => {
-
-  response.send('test request received')
-
-})
-
+// })
+app.get('/books',seedBook);
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
+
+
+
+mongoose.connect(`${MONGO_SERVER}/Book`,{useNewUrlParser: true, useUnifiedTopology: true});
