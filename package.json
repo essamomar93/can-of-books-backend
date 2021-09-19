@@ -24,5 +24,6 @@
   "bugs": {
     "url": "https://github.com/essamomar93/can-of-books-backend/issues"
   },
-  "homepage": "https://github.com/essamomar93/can-of-books-backend#readme"
+  "homepage": "https://github.com/essamomar93/can-of-books-backend#readme",
+  "devDependencies": {}
 }
