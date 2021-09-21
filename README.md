@@ -39,7 +39,7 @@ Clone this repo to your own account with the green "Use this template" button. T
 
 -----------------------------
 
-ame of feature: ________________________________
+name of feature: ________________________________
 
 Estimate of time needed to complete: _____
 

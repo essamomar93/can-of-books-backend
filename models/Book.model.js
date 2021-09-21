@@ -32,11 +32,12 @@ let seedBook = () => {
     status: "  1st Edition",
     email: "essam.93@hotmail.com"
   })
-  
+
   data3.save();
 
 
 }
+
 // seedBook();
 // --------------------------
 // let seedBook=()=>{
@@ -77,4 +78,4 @@ let seedBook = () => {
 //   booksList.save();
 // }
 
-module.exports= bookModel
+module.exports= {bookModel}
