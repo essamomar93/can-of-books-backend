@@ -20,8 +20,10 @@ const deleteBookController = (req, res) => {
         bookModel.find().then(data => res.json(data));
     })
 }
+
 module.exports = {
     booksController,
     createBook,
-    deleteBookController
+    deleteBookController,
+    
 }
