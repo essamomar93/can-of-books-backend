@@ -20,10 +20,23 @@ const deleteBookController = (req, res) => {
         bookModel.find().then(data => res.json(data));
     })
 }
+const updateBookController=async (req,res)=>{
+    let bookId=req.params.id;
+    let updatedData=req.body;
+    bookModel.findOne({_id:bookId}).then(book=>{
+        book.title=updatedData.title;
+        book.email=updatedData.email;
+        book.description=updatedData.description;
+        book.status=updatedData.status
+        book.save();
+    });
+    let updatedBooktsList=await bookModel.find({});
+    res.status(200).send(updatedBooktsList);
+}
 
 module.exports = {
     booksController,
     createBook,
     deleteBookController,
-    
+    updateBookController
 }
