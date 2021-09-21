@@ -1,29 +1,27 @@
 "use strict";
 
-const bookModel = require('../models/Book.model');
+const { bookModel } = require('../models/Book.model');
 
 let booksController = (req, res) => {
-    bookModel.find({}).then(data => {
-        res.json(data);
+    bookModel.find().then(data => {
+        res.status(200).json(data)
     })
 }
 
-let createBook = async (req, res) => {
-    let title = req.body;
-    let description = req.body;
-    let email = req.body;
-    let status = req.body;
-    let newBook = new bookModel({
-        title:title,
-        description:description,
-        email:email,
-        status:status
-    })
+let createBook = (req, res) => {
+    let bookData = req.body;
+    let newBook = new bookModel(bookData)
     newBook.save();
-    let bookList = await bookModel.find({});
-    res.status(201).json(bookList);
+    res.status(200).json(newBook);
+}
+const deleteBookController = (req, res) => {
+    let bookId = req.params.id;
+    bookModel.findByIdAndDelete(bookId).then(() => {
+        bookModel.find().then(data => res.json(data));
+    })
 }
 module.exports = {
     booksController,
-    createBook
+    createBook,
+    deleteBookController
 }
