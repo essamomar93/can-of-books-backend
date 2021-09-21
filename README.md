@@ -4,6 +4,7 @@
 **Version**: 1.0.0 
 2.0.0
 3.0.0
+4.0.0
 ## Overview
 a small app to track what books have impacted you, and what's recommended to read next
 
@@ -17,6 +18,7 @@ axios . nodemon . mongodb . javascrebt . bootstrap
 
  21-09-2021 4:00pm - Application now has a fully-functional express server, with a GET route for the location resource.
 21-09-2021 10:00 pm lab 12 finish 
+21-09-2021 11:pm lab 13 backend finish 
 ## Estimates
 <!-- See below -->
 
@@ -33,4 +35,16 @@ Start time: 2
 Finish time: 9
 
 Actual time needed to complete: 7
+
+lab-13
+Name of feature: can of books frontend 
+
+Estimate of time needed to complete: 1
+
+Start time: 10
+
+Finish time: 11
+
+Actual time needed to complete: 1
+
 
