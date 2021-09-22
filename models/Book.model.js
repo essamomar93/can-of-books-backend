@@ -33,5 +33,7 @@ let seedBook = () => {
   })
   data3.save();
 }
-// seedBook();
+seedBook();
 module.exports = {bookModel}
+
+

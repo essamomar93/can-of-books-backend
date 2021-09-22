@@ -1,7 +1,9 @@
 # Can Of Books Frontend 
 
+
 **Author**: Essam omar . Dima Alabsi
-**Version**: 1.0.0 
+ 
+
 2.0.0
 3.0.0
 4.0.0
@@ -17,6 +19,9 @@ axios . nodemon . mongodb . javascrebt . bootstrap
 
 ## Change Log
 
+
+
+
  21-09-2021 4:00pm - Application now has a fully-functional express server, with a GET route for the location resource.
 21-09-2021 10:00 pm lab 12 finish 
 21-09-2021 11:pm lab 13 backend finish 
@@ -27,6 +32,8 @@ axios . nodemon . mongodb . javascrebt . bootstrap
 ## Credit and Collaborations
 essam omar 
 dima alabsi 
+
+
 
 Name of feature: can of books frontend 
 
