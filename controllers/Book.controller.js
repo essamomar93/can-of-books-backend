@@ -18,7 +18,7 @@ const deleteBookController = (req, res) => {
     let bookId = req.params.id;
     bookModel.findByIdAndDelete(bookId).then(() => {
         bookModel.find().then(data => res.json(data));
-    })
+    }).catch(error =>console.log(error))
 }
 const updateBookController=async (req,res)=>{
     let bookId=req.params.id;
