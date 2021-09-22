@@ -8,6 +8,7 @@ let booksController = (req, res) => {
     })
 }
 
+
 let createBook =  (req, res) => {
     let bookData = req.body;
     let newBook = new bookModel(bookData)
@@ -42,4 +43,3 @@ module.exports = {
     deleteBookController,
     UpdateBookController
 }
-
