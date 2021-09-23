@@ -20,31 +20,49 @@ axios . nodemon . mongodb . javascrebt . bootstrap
 21-09-2021 10:00 pm lab 12 finish 
 21-09-2021 11:pm lab 13 backend finish 
 ## Estimates
-<!-- See below -->
+Name of feature: Building CRUD apps with MongoDB(lab 11)
 
-## Credit and Collaborations
-essam omar 
-dima alabsi 
 
-Name of feature: can of books frontend 
+Estimate of time needed to complete: 4 hours
+
+Start time: 2:00pm
+
+Finish time: 6:00pm
+
+Actual time needed to complete: 4 hours
+----------------------------------
+Name of feature: Resource Create and Delete(lab 12)
+
+Estimate of time needed to complete: 5 hours
+
+Start time: 3:00pm
+
+Finish time: 8:00pm
+
+Actual time needed to complete: 5 hours
+
+----------------------------
+Name of feature: UPDATE of CRUD(lab 13)
 
 Estimate of time needed to complete: 4
 
 Start time: 2
 
-Finish time: 9
+Finish time: 7
 
-Actual time needed to complete: 7
+Actual time needed to complete: 5 hours
+------------------------------
+Name of feature: User Authentication with Auth0 ( lab 14)
 
-lab-13
-Name of feature: can of books frontend 
 
-Estimate of time needed to complete: 1
+Estimate of time needed to complete: 4
 
-Start time: 10
+Start time: 5:00pm
 
-Finish time: 11
+Finish time: 9:00pm
 
-Actual time needed to complete: 1
-
+Actual time needed to complete: 4 hours
+## Credit and Collaborations
+essam omar 
+dima alabsi 
 
